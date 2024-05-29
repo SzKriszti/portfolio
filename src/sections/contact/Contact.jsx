@@ -1,6 +1,10 @@
+import styles from './ContactStyles.module.css'
+
 function Contact() {
   return (
-    <div>Contact</div>
+    <section id='Contact' className={styles.container}>
+      <h2>Contact</h2>
+    </section>
   )
 }
 

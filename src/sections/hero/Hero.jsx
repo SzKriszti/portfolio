@@ -25,7 +25,7 @@ function Hero() {
         <img className={style.heroPicture} src={profil} alt="profil picture of Krisztina Szabó" />
       </div>
       <div className={style.info}>
-        <h1>Krisztina <br/> Szabó</h1>
+        <h1>Krisztina Szabó</h1>
         <h2>Junior Frontend Developer</h2>
         <span>
           <a href='https://github.com/SzKriszti' target='_blank'>

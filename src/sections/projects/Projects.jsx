@@ -3,7 +3,6 @@ import ProjectCard from '../../common/ProjectCard'
 import countriesPicture from '../../assets/countries.png'
 import RickMortyPicture from '../../assets/rickandmorty.png'
 
-
 function Projects() {
   return (
     <section id="projects" className={style.container}>
@@ -22,8 +21,7 @@ function Projects() {
           decription='In this webpage the user could read some details about the caracters. I used JavaScript, API, HTML, CSS, SCSS in this project.'
         />
 
-
-
+      {/* TO DO: add more projects */}
 
       </div>
     </section>
