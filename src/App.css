@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem
+}
+
+:root {
+  background-color: #fff;
+  color: #222;
+
+}
+
+[data-theme='dark'] {
+  background-color: #222;
+  color: #fff;
+
+}
+

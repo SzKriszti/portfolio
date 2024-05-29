@@ -1,4 +1,4 @@
-import React, {createContext, useContext, useEffect, useState} from "react"
+import {createContext, useContext, useEffect, useState} from "react"
 
 const ThemeContext = createContext()
 
@@ -15,10 +15,11 @@ export const ThemeProvider = ({children}) => {
   }, [theme])
 
   const toggle = () => {
-    setTheme((theme) => (theme === 'light'? 'dark' : 'light'))
+    setTheme((prevTheme) => (prevTheme === 'light'? 'dark' : 'light'))
   }
 
   return(
     <ThemeContext.Provider value={{theme, toggle}}>{children}</ThemeContext.Provider>
   )
 }
+

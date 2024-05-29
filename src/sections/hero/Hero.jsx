@@ -10,7 +10,7 @@ import cv from '../../assets/cv.pdf'
 import { useTheme } from '../../common/ThemeContext'
 
 function Hero() {
-  const {theme, toggleTheme} = useTheme()
+  const {theme, toggle} = useTheme()
 
   const themeIcon = theme === 'light' ? sun : moon
   const githubIcon = theme === 'light' ? githublight : githubdark
@@ -18,9 +18,11 @@ function Hero() {
 
   return (
     <section id='hero' className={style.container}>
+      <header>
+        <img className={style.colorMode} src={themeIcon} alt='theme mode icon' onClick={toggle}/>
+      </header>
       <div className={style.colorModeContainer}>
-        <img className={style.hero} src={profil} alt="profil picture of Krisztina Szabó" />
-        <img className={style.colorMode} src={themeIcon} alt='theme mode icon' onClick={toggleTheme}/>
+        <img className={style.heroPicture} src={profil} alt="profil picture of Krisztina Szabó" />
       </div>
       <div className={style.info}>
         <h1>Krisztina <br/> Szabó</h1>
@@ -37,7 +39,7 @@ function Hero() {
           Hello my name is Kriszti and I am a passonate Junior Frontend Developer.
         </p>
         <a href={cv} download>
-          <button className='hover'>Download resume</button>
+          <button className='button'>Download resume</button>
         </a>
       </div>
     </section>
